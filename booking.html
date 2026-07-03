@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booking | Nawaz Hotel | Book a Room</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a room at Nawaz Hotel using our short booking form and check your estimated cost with our room calculator.">
+  <meta name="keywords" content="hotel booking, room booking form, hotel reservation">
+  <link rel="canonical" href="https://nawazhotel.netlify.app/booking.html">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Booking | Nawaz Hotel">
+  <meta property="og:description" content="Book a room at Nawaz Hotel using our short booking form and check your estimated cost with our room calculator.">
+  <meta property="og:url" content="https://nawazhotel.netlify.app/booking.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Booking | Nawaz Hotel">
+  <meta name="twitter:description" content="Book a room at Nawaz Hotel.">
+</head>
+<body>
+
+<div class="header">
+  <h1>Nawaz Hotel</h1>
+</div>
+
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="rooms.html">Rooms</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Booking</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="banner">
+  <h2>Book Your Stay</h2>
+</div>
+
+<div class="container">
+  <h2>Room Cost Calculator</h2>
+  <form onsubmit="return false;">
+    <label for="roomSelect">Select Room Type</label>
+    <select id="roomSelect">
+      <option value="2200">Deluxe Room - Rs. 2,200 / night</option>
+      <option value="3500">Executive Room - Rs. 3,500 / night</option>
+      <option value="5800">Royal Suite - Rs. 5,800 / night</option>
+    </select>
+
+    <label for="nightCount">Number of Nights</label>
+    <input type="number" id="nightCount" placeholder="Enter number of nights" min="1">
+
+    <button type="button" class="btn" onclick="calculateCost()">Calculate Cost</button>
+    <p id="costResult" class="result"></p>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Booking Form</h2>
+  <form onsubmit="return validateForm()">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email Address</label>
+    <input type="text" id="email" placeholder="Enter your email">
+
+    <label for="phone">Mobile Number</label>
+    <input type="text" id="phone" placeholder="Enter 10 digit mobile number">
+
+    <label for="roomType">Preferred Room Type</label>
+    <select id="roomType">
+      <option value="">Select Room Type</option>
+      <option>Deluxe Room</option>
+      <option>Executive Room</option>
+      <option>Royal Suite</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="4" placeholder="Tell us your check-in and check-out dates"></textarea>
+
+    <button type="submit" class="btn">Send Booking Request</button>
+    <p id="formMessage" class="result"></p>
+  </form>
+</div>
+
+<div class="footer">
+  <p>Nawaz Hotel &copy; 2026</p>
+  <p>Email: hello@nawazhotel.com | Phone: +91 9876543210</p>
+</div>
+
+<script src="script.js"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a4760a62a5f871d4348cb20/1jsjd33bj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
